@@ -33,6 +33,24 @@ body {
   font-weight: 500;
 }
 
+#cursor {
+  height: 18px;
+  width: 18px;
+  background-color: #eb7b84;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+}
+#cursor-blur {
+  height: 200px;
+  width: 200px;
+  background-color: #eb7b84bb;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(70px);
+  z-index: 9;
+}
+
 video {
   position: fixed;
   height: 100%;
@@ -54,6 +72,7 @@ video {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 10;
 }
 
 #page1 h1 {
@@ -78,6 +97,7 @@ video {
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 4px;
+  z-index: 10;
 }
 
 #page1 p {
