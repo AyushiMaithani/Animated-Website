@@ -38,6 +38,7 @@ video {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 
 #main {
@@ -58,13 +59,24 @@ video {
 #page1 h1 {
   font-weight: 900;
   font-size: 60px;
+  position: relative;
+}
+
+#page1 h1::before {
+  content: "SING YOUR STORY";
+  color: black;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  -webkit-text-stroke: 2px #eb7b84;
+  z-index: -1;
 }
 
 #page1 h2 {
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
-  margin-top: 14px;
+  margin-top: 25px;
   margin-bottom: 4px;
 }
 
@@ -73,4 +85,9 @@ video {
   width: 45%;
   text-align: center;
   font-weight: 200;
+}
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
