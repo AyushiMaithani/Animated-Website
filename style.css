@@ -246,3 +246,20 @@ video {
 .card:hover {
   transform: rotate3d(-1, 1, 0, 25deg);
 }
+
+#pink-div {
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(to left bottom, #eb7b84, #d4202f);
+}
+
+#pink-div h4 {
+  width: 50%;
+  margin: 70px;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: black;
+}

@@ -32,3 +32,19 @@ document.addEventListener("mousemove",function(dets){
     blur.style.left=dets.x -100+"px";
     blur.style.top=dets.y-100+"px";
 })
+
+var h4_all=document.querySelectorAll("#nav h4")
+h4_all.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        crsr.style.scale=3
+crsr.style.border="1px solid #fff"
+crsr.style.backgroundColor="transparent"
+crsr.style.transition = "all ease-out 0.2s"
+    })
+    elem.addEventListener("mouseleave",function(){
+        crsr.style.scale=1
+crsr.style.border="0px solid #EB7B84"
+crsr.style.backgroundColor="#EB7B84"
+crsr.style.transition = "all ease-out 0.1s"
+    })
+})
